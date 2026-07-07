@@ -1,0 +1,13 @@
+---
+description: 编写、重构或审查 C++ 代码时遵循 Google C++ Style Guide（命名、格式、可读性）；若与本仓库 embedded-cpp 等嵌入式约束冲突，以项目嵌入式规范为准。
+globs:
+  - "**/*.h"
+  - "**/*.hpp"
+  - "**/*.cc"
+  - "**/*.cpp"
+  - "**/*.cxx"
+  - "**/*.inl"
+alwaysApply: false
+---
+
+**参考**：[Google C++ Style Guide](https://google.github.io/styleguide/cppguide.html)

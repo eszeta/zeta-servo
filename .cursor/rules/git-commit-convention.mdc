@@ -1,0 +1,91 @@
+---
+description: "Drafting or editing git commit messages, PR titles, merge commit messages, or Conventional Commits–style summaries for this repository (Chinese body, English type/scope)."
+alwaysApply: false
+---
+
+# Git Commit Message Convention
+
+**IMPORTANT: When generating git commit messages, you MUST follow these rules strictly.**
+
+## Commit Message Format
+All commit messages must follow the [Conventional Commits](mdc:https:/www.conventionalcommits.org) specification, with the following format:
+
+```
+<type>[optional scope]: <description>
+
+[optional body]
+
+[optional footer(s)]
+```
+
+## Language
+- All commit message content (description, body, footer) should be written in **Chinese**.
+- Only the type and scope should remain in English (following Conventional Commits standard).
+- Example: `feat(ui): 添加主菜单界面` (correct)
+- Example: `feat(ui): add main menu interface` (incorrect)
+
+## Commit Types
+- `feat`: Add new feature
+- `fix`: Fix bug
+- `docs`: Documentation changes
+- `style`: Code formatting (does not affect functionality)
+- `refactor`: Code refactoring (does not affect functionality or fix bugs)
+- `perf`: Performance optimization
+- `test`: Add or modify tests
+- `build`: Changes to build system or external dependencies
+- `ci`: Changes to CI configuration files and scripts
+- `chore`: Other changes that don't modify source code (e.g., build or dependency management)
+- `revert`: Revert previous commit
+
+## Scope
+- Scope is optional, used to specify the area affected by the commit
+- Common scopes: `ui`, `core`, `gameplay`, `networking`, `audio`, `animation`, `physics`, etc.
+- Example: `feat(ui): 添加主菜单界面`
+
+## Description
+- Use concise and clear language to describe the changes
+- Start with a verb, use first person present tense
+- Do not end with a period
+- Keep it under 50 characters
+
+## Body
+- Optional, used to provide detailed explanation of the commit
+- Explain the motivation for the change and contrast with previous behavior
+
+## Footer
+- Optional, used to provide additional reference information
+- May include: related Issues, breaking changes, etc.
+
+## Breaking Changes
+- If the commit contains breaking changes, add `!` after the type or add `BREAKING CHANGE: <description>` in the Footer
+- Example:
+  ```
+  feat!: 重构游戏状态管理系统
+  
+  BREAKING CHANGE: 游戏状态管理API已完全重构，需更新所有调用点
+  ```
+
+## Commit Message Examples
+
+```
+feat(player): 添加玩家角色跳跃功能
+
+实现了双击空格键可进行二段跳的功能。
+跳跃高度由玩家属性决定。
+
+Refs: #123
+```
+
+```
+fix(physics): 修复角色穿墙问题
+
+调整了碰撞体积和物理参数，解决了特定情况下角色可以穿过墙壁的问题。
+
+Closes #456
+```
+
+```
+docs: 更新README文件
+
+添加项目设置说明和开发环境要求
+```

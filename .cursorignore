@@ -1,0 +1,57 @@
+# Add directories or file patterns to ignore during indexing (e.g. foo/ or *.csv)
+
+# PlatformIO build directories
+.pio/
+.pioenvs/
+.piolibdeps/
+
+# PlatformIO build artifacts
+*.elf
+*.bin
+*.hex
+*.eep
+*.lss
+*.map
+*.sym
+*.lst
+*.o
+*.a
+*.d
+*.elf
+*.hex
+*.bin
+*.eep
+*.lss
+*.map
+*.sym
+*.lst
+*.o
+*.a
+*.d
+
+# IDE specific files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS specific files
+.DS_Store
+Thumbs.db
+
+# Debug files
+*.gdb
+*.pyc
+*.pyo
+*.pyd
+*.so
+*.dylib
+*.dll
+*.exe
+*.out
+*.app
+
+# Test coverage
+*.gcda
+*.gcno
+*.gcov

@@ -1,0 +1,18 @@
+BasedOnStyle: Google
+ColumnLimit: 100                                  # 每行最大列宽（默认：80）
+AlignConsecutiveAssignments: Consecutive          # 连续赋值按 = 对齐（默认：不启用）
+AlignConsecutiveBitFields: Consecutive            # 连续位域按 : 对齐（默认：不启用）
+AlignConsecutiveDeclarations: Consecutive         # 连续声明按 = 对齐（默认：不启用）
+AlignConsecutiveMacros: Consecutive               # 连续 #define 按 = 对齐（默认：不启用）
+AlignConsecutiveShortCaseStatements:
+  Enabled: true                                   # 连续 case 标签对齐（默认：false）
+AlignEscapedNewlines: LeftWithLastLine            # 宏续行符 \ 以末行左边缘对齐（默认：Left）
+AlignOperands: AlignAfterOperator                 # 多行表达式操作数在运算符后对齐（默认：Align）
+AllowAllParametersOfDeclarationOnNextLine: false  # 禁止所有参数换到下一行（默认：true）
+BinPackParameters: OnePerLine                     # 超宽时每个参数单独一行（默认：true）
+AllowShortBlocksOnASingleLine: Empty              # 仅空块可单行（默认：Never）
+AllowShortFunctionsOnASingleLine: Inline          # 仅 inline 函数可单行（默认：All）
+AllowShortIfStatementsOnASingleLine: Never        # 禁止短 if 单行（默认：WithoutElse）
+AllowShortLoopsOnASingleLine: false               # 禁止短循环单行（默认：true）
+ReflowComments: false                             # 不自动重排长注释（默认：Always）
+TabWidth: 4                                       # Tab 宽度（默认：8）

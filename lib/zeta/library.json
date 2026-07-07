@@ -1,0 +1,12 @@
+{
+    "name": "zeta",
+    "version": "0.1.0",
+    "description": "Zeta (ζ) — compact brushed-DC servo controller library for STM32: PID position/velocity loops with current sensing, magnetic encoder & IMU drivers, Dynamixel-style slave regmap protocol.",
+    "authors": [
+        {
+            "name": "ES_ZETA",
+            "email": "es_zeta@163.com"
+        }
+    ],
+    "license": "Apache-2.0"
+}
